@@ -1,3 +1,4 @@
 # Cookie-Checker
-Simple python roblox cookie checker.\n
+Simple python roblox cookie checker.
+
 Python version 3.11.2+

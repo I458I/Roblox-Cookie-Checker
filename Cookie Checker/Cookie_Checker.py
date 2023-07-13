@@ -42,14 +42,16 @@ try:
  r=requests.get(f"https://premiumfeatures.roblox.com/v1/users/{ID}/validate-membership", cookies={'.ROBLOSECURITY': IPlock}).json() #PREMIUM CHECKER
  if bool(r):PREMIUM = print(f"{Style.BRIGHT}{Fore.GREEN}Premium:{Fore.BLUE} True")
  else:print(f"{Style.BRIGHT}{Fore.GREEN}Premium:{Fore.RED} False")
- r=requests.get(f'https://inventory.roblox.com/v1/users/{ID}/assets/collectibles?assetType=All&sortOrder=Asc&limit=100', cookies={".ROBLOSECURITY": IPlock}).json() #Limiteds Checker
- print(f"{Style.BRIGHT}{Fore.GREEN}Limiteds:")
- collectibles = r["data"]
- for collectible in collectibles:
-  name = collectible["name"]
-  value = collectible["recentAveragePrice"]
-  x = "{:,}".format(value)
-  print(f"{Style.BRIGHT}{Fore.GREEN}{name}: {Fore.YELLOW}{x}$")
+ r=requests.get(f"https://inventory.roblox.com/v1/users/{ID}/assets/collectibles?assetType=All&sortOrder=Asc&limit=100", cookies={'.ROBLOSECURITY': IPlock}).json() #Limiteds Checker
+ if r['data'] == []:print(f"{Style.BRIGHT}{Fore.GREEN}Limiteds: {Fore.RED}None")
+ else:
+  print(f"{Style.BRIGHT}{Fore.GREEN}Limiteds:")
+  collectibles = r["data"]
+  for collectible in collectibles:
+   name = collectible["name"]
+   value = collectible["recentAveragePrice"]
+   x = "{:,}".format(value)
+   print(f"{Style.BRIGHT}{Fore.GREEN}{name}: {Fore.YELLOW}{x}$")
  print(f"{Style.BRIGHT}{Fore.GREEN}Refreshed Cookie:\n{Fore.BLUE}{IPlock}")
  print(Style.BRIGHT+ Fore.LIGHTBLACK_EX + "\nCRTL + CLICK. To follow links.")
  input(Style.BRIGHT+ Fore.RED + "Press enter to exit.")

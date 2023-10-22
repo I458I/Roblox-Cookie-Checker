@@ -7,7 +7,7 @@ print(f"{Style.BRIGHT}{Fore.LIGHTBLACK_EX}Enter '?' for help/info.")
 cookie = input(f"{Style.BRIGHT}{Fore.GREEN}Enter Cookie:{Fore.BLUE}").strip()
 os.system("cls")
 def help():
-  print("Paste the .ROBLOSECURITY when prompted.\n\nMade by 𝕴458𝕴#2969, Feel free to DM me for help.\nThis will close in 15 seconds")
+  print("Paste the .ROBLOSECURITY when prompted.\n\nMade by i_458_i, Feel free to DM me for help.\nThis will close in 15 seconds")
   time.sleep(15)
   quit()
 if cookie == "?":help()

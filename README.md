@@ -2,9 +2,9 @@
 Simple Python roblox cookie checker.
 
 Python version 3.11.2+
-![image](https://github.com/boi458nose/Roblox-Cookie-Checker/assets/116500541/953106c8-b089-432e-b7e9-f3f98cc5bb6b)
-![image](https://github.com/boi458nose/Cookie-Checker/assets/116500541/bcfc9c96-6ca5-482e-821a-082c194bea6b)
-![image](https://github.com/boi458nose/Cookie-Checker/assets/116500541/fc94fc04-2bb1-4c33-8075-937a0fc3a1c1)
-![image](https://github.com/boi458nose/Cookie-Checker/assets/116500541/b15c3c90-2f2c-4980-8afe-ffe59b72e8cb)
+![image](https://github.com/boi458nose/Roblox-Cookie-Checker/assets/116500541/cec74c3a-def7-4df6-bfee-3721b54fc1fb)
+![image](https://github.com/boi458nose/Roblox-Cookie-Checker/assets/116500541/a8d60993-b488-45fc-9b97-8d760653c955)
+![image](https://github.com/boi458nose/Roblox-Cookie-Checker/assets/116500541/8b477c98-50d2-4d31-a74f-72a9269c235d)
+![image](https://github.com/boi458nose/Roblox-Cookie-Checker/assets/116500541/33e97fb9-4ae9-4f60-91fa-999f1b430e56)
 
-Simple but remarkably useful.
+Some calm you could use.

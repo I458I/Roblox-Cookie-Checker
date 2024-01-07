@@ -5,7 +5,7 @@ import time
 def title():
   print(f"{Style.BRIGHT}{Fore.MAGENTA}|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|")
   print(f"{Fore.MAGENTA}|   {Style.BRIGHT}{Fore.GREEN}Cookie Checker  {Fore.MAGENTA}|")
-  print(f"{Fore.MAGENTA}|    {Style.BRIGHT}{Fore.BLUE}Made by {Fore.YELLOW}458    {Fore.MAGENTA}|")
+  print(f"{Fore.MAGENTA}|  {Style.BRIGHT}{Fore.BLUE}Made by {Fore.YELLOW}I458I    {Fore.MAGENTA}|")
   print(f"{Fore.MAGENTA}|___________________|\n")
 title()
 init(autoreset=True)
@@ -14,7 +14,7 @@ cookie = input(f"{Style.BRIGHT}{Fore.GREEN}Enter Cookie:{Fore.BLUE}").strip()
 os.system("cls")
 title()
 def help():
-  print("Paste the .ROBLOSECURITY when prompted.\n\nMade by 𝕴458𝕴#2969, Feel free to DM me for help.\nThis will close in 15 seconds")
+  print("Paste the .ROBLOSECURITY when prompted.\n\nMade by I458I, Feel free to DM me for help.\nThis will close in 15 seconds")
   time.sleep(15)
   quit()
 if cookie == "?":help()

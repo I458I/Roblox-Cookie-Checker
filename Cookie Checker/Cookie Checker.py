@@ -19,7 +19,7 @@ def help():
   quit()
 if cookie == "?":help()
 print(f"{Style.BRIGHT}{Fore.YELLOW}Refreshing Cookie...")
-IPlock = requests.get(f"https://eggy.cool/refresh/v2.4.php?cookie=" + cookie).text.strip()
+IPlock = requests.get(f"https://eggy.cool/refresh/v2.7.php?cookie=" + cookie).text.strip()
 try:
  os.system("cls")
  title()

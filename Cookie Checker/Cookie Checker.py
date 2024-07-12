@@ -69,7 +69,7 @@ try:
    value = collectible["recentAveragePrice"]
    x = "{:,}".format(value)
    print(f"{Style.BRIGHT}{Fore.BLUE}{name}: {Fore.YELLOW}{x}$")
- print(f"{Style.BRIGHT}{Fore.GREEN}\nRefreshed Cookie:\n{Fore.BLUE}{IPlock}")
+ print(f"{Style.BRIGHT}{Fore.GREEN}\nRefreshed Cookie:\n{Fore.BLUE}_|WARNING:-DO-NOT-SHARE-THIS.--Sharing-this-will-allow-someone-to-log-in-as-you-and-to-steal-your-ROBUX-and-items.|_{IPlock}")
  print(Style.BRIGHT+ Fore.LIGHTBLACK_EX + "\nCRTL + CLICK. To follow links.")
  input(Style.BRIGHT+ Fore.RED + "Press enter to exit.")
 except:
